@@ -1,2 +1,2 @@
-# Dental-Website
-It's a dental website programmed by Php using the framework Symfony 4
+# Dental_Cabinet_App
+School projet of a Dental Cabinet App with PHP Framework Symfony
