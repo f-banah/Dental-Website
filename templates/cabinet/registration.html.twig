@@ -1,0 +1,31 @@
+{% extends 'base.html.twig' %}
+
+{% block body %}
+<br>
+<br>
+<br>
+<br>
+<br>
+<h1 align='center'> Enregistrer un nouveau patient</h1>
+
+<div class="container">
+{{ form_start(form) }}
+<div class="form-group">
+    {{ form_row(form.firstname) }}
+    {{ form_row(form.lastname) }}
+    {{ form_row(form.Email) }}
+    {{ form_row(form.pwd) }}
+    {{ form_row(form.genre) }}
+    {{ form_row(form.age) }}
+
+</div>
+
+<div class="col text-center">
+    <button type="submit" class="btn btn-warning btn-lg" >Ajouter le patient</button>
+</div>
+<br>
+
+
+{{ form_end(form) }}
+</div>
+{% endblock %}

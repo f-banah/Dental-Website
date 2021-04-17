@@ -1,0 +1,21 @@
+{% extends 'base.html.twig' %}
+{% form_theme formc 'bootstrap_4_layout.html.twig' %}
+
+
+{% block body %}
+
+<h1 align='center'> Enregistrer une nouvelle consultation</h2>
+
+<div class="inscription">
+{{ form_start(formc) }}
+
+{{ form_row(formc.date_consultation , {'label' :'Date de la consultation'}) }}
+{{ form_row(formc.heure_consultation, {'label' :'Heure de la consultation'}) }}
+
+<button type="submit" class="btn btn-primary my-2 my-sm-0">
+Ajouter au calendrier
+</button>
+
+{{ form_end(formc) }}
+</div>
+{% endblock %}
