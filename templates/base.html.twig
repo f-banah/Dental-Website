@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>{% block title %}{% endblock %} INSEAdentaire</title>
+        <link rel="stylesheet" type="text/css" href="https://bootswatch.com/4/yeti/bootstrap.min.css">
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+	    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+	    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+        {% block stylesheets %}
+        <link rel="stylesheet" href="/css/style.css">
+        {% endblock %}
+    </head>
+    <body>
+
+        {% block nav %}
+            <nav class="navbar navbar-expand-sm bg-dark navbar-dark fixed-top">
+                <a class="navbar-brand" href="{{path("home")}}">INSEAdentaire</a>
+                <!-- Links -->
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                    <a class="nav-link" href="{{path("registration")}}">Inscripstion</a>
+                    </li>
+                    <li class="nav-item">
+                    <a class="nav-link"  href="{{path("connexion_show")}}">Connexion</a>
+                    </li>
+                </ul>
+
+            </nav>
+        {% endblock %}
+
+        {% block body %}{% endblock %}
+        
+        {% block javascripts %}{% endblock %}
+    </body>
+</html>
